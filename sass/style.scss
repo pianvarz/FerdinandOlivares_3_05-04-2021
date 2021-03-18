@@ -1,8 +1,6 @@
 * {
     box-sizing: boder-box;
     cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
 }
 
         /* -------------------Variables and Mixings-------------------*/
@@ -11,22 +9,23 @@ $primary_color: #9356DC;
 $seconday_color: #ff79da;
 $tertiary_color:#99E2d0;
 
-$title_font: Shrikhand;
-$main_font: Roboto;
+$title_font: Shrikhand, sans-serif;
+$main_font: Roboto, sans-serif;
 
 @mixin logo {
-  display: block;
-  max-width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
   max-height: 200px;
-  padding: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
 @mixin img_size {
-  position: relative;
-  width: 200px;
-  height: 100px;
+  object-fit: cover;
+  position: center;
+  max-width: 300px;
+  max-height: 200px;
   padding: 15px;
 }
 
@@ -37,37 +36,50 @@ $main_font: Roboto;
 @media all and (max-width: 768px) {
   body {
     width: 768px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .logo {
     @include logo;
-    display: flex;
     justify-items: center;
     #logoimg {
       position: relative;
-      max-width: 200px;
-      width: 400px;
+      max-width: 160px;
       max-height: 70px;
       height: auto;
       padding: 10px;
       align-self: center;
-      margin-left: auto;
-      margin-right: auto;
-      > a {
-        font-family: $main_font;
-        font-size: 14px;
-      }
     }
   }
 
+  .lOC {
+    background-color: lightgray;
+    line-height: 40px;
+    text-align: center;
+    max-width: 450px;
+    font-family: $main_font;
+    font-size: 14px;
+    > i {
+      letter-spacing: 5px;
+    }
+  }
   #nav {
+    font-family: $main_font;
+    font-size: 14px;
+    background-color: #f2f2f2;
     display: block;
     padding: 15px;
-    margin-left: 15%;
-    margin-right: 15%;
     text-align: center;
-    max-width: 200px;
+    max-width: 420px;
     max-height: 200px;
+    >:nth-child(1), :nth-child(3) {
+      line-height: 35px;
+      padding: 15px;
+    &:nth-child(1) {
+      font-size: 16px;
+    }
+    }
     }
     
   .rest {
@@ -75,19 +87,14 @@ $main_font: Roboto;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 20px;
-    &.__link {
+    &__link {
       max-width: 200px;
       max-height: 300px;
       display: flex;
-      &.__img {
+      > img {
        @include img_size;
        object-fit: cover;
        position: relative;
-       padding: 20px;
-       width: 400px;
-       height: 330px;
-       max-width: 400px;
-       max-height: 300px;
       }
     }
   }
