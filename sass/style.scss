@@ -13,7 +13,7 @@ $primary_color: #9356DC;
 $seconday_color: #ff79da;
 $tertiary_color:#99E2d0;
 
-$title_font: Shrikhand, sans-serif;
+$title_font: Shrikhand;
 $main_font: Roboto, sans-serif;
 
 @mixin logo {
@@ -147,7 +147,8 @@ $main_font: Roboto, sans-serif;
   
   .rest {
   @include margin;
-    display: flex;
+  border-radius: 20px;
+  display: flex;
     flex-direction: column;
     gap: 15px;
     width: 60%;
@@ -158,6 +159,7 @@ $main_font: Roboto, sans-serif;
     font-size: 10px;
     font-family: $main_font;
     background-color: #f2f2f2;
+    margin-bottom: 40px;
     header {
       font-size: 13px;
       margin-left: 5%;
@@ -172,9 +174,33 @@ $main_font: Roboto, sans-serif;
       line-height: 16px;
       margin-left: 5%;
       margin-right: 5%;
+      padding: 20px;
       .rest__img {
        @include img_size;
       }
+    }
+  }
+
+  #footer {
+    @include margin;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 60%;
+    max-width: 90%; 
+    height: auto;
+    background-color: #202020;
+    color: white;
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px;
+    font-size: 12px;
+    .footer__logo {
+      object-fit: cover;
+      width: 40%;
+      max-width: 90%;
+      height: auto;
+      font-family: $title_font;
+      font-size: 14px;
     }
   }
 }
