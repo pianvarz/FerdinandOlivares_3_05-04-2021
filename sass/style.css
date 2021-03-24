@@ -1,17 +1,13 @@
 * {
-  -webkit-box-sizing: boder-box;
-          box-sizing: boder-box;
+  box-sizing: boder-box;
 }
-
 * a {
   text-decoration: none;
   color: black;
 }
-
 * a :hover {
   cursor: pointer;
 }
-
 * a :hover :visited {
   color: black;
 }
@@ -24,21 +20,15 @@
     margin-left: auto;
     margin-right: auto;
   }
+
   .logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    flex-wrap: wrap;
+    flex-grow: 1;
     width: 39%;
     max-width: 90%;
     max-height: 200px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
   }
@@ -47,10 +37,10 @@
     max-width: 100%;
     max-height: 70px;
     padding: 10px;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
     justify-self: center;
   }
+
   .lOC {
     background-color: lightgray;
     line-height: 40px;
@@ -69,20 +59,14 @@
   .lOC > i {
     letter-spacing: 5px;
   }
+
   #nav {
     font-family: Roboto;
     font-size: 11px;
     background-color: #f2f2f2;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    flex-direction: column;
+    flex-grow: 1;
     text-align: center;
     max-width: 90%;
     width: 60%;
@@ -101,6 +85,7 @@
   #nav > :nth-child(1):nth-child(1), #nav :nth-child(3):nth-child(1) {
     font-size: 13px;
   }
+
   #exbtn {
     text-decoration: none;
     color: white;
@@ -111,31 +96,24 @@
     width: 70%;
     height: 50%;
   }
+
   #hIW {
     margin-left: auto;
     margin-right: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    flex-direction: column;
+    justify-content: start;
     gap: 10px;
     font-family: Roboto;
     width: 50%;
     max-width: 90%;
-    min-width: 200px;
+    min-width: 221px;
     max-height: auto;
     padding-top: 20px;
     list-style: numeric;
     font-size: 11px;
     line-height: 250%;
-    text-decoration: none;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
   }
   #hIW h {
     font-size: 13px;
@@ -148,24 +126,21 @@
     padding: 3px;
     background-color: #f2f2f2;
     list-style-type: decimal;
-    list-style-position: outside;
+    list-style-position: inside;
   }
   #hIW li i {
     letter-spacing: 10px;
     text-align: start;
     color: #9356DC;
   }
+
   .rest {
     margin-left: auto;
     margin-right: auto;
-    border-radius: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
     width: 60%;
     max-width: auto;
@@ -177,7 +152,6 @@
     font-size: 10px;
     font-family: Roboto;
     background-color: #f2f2f2;
-    margin-bottom: 40px;
   }
   .rest header {
     font-size: 13px;
@@ -186,18 +160,10 @@
   }
   .rest .rest__link {
     background-color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 1;
     width: 90%;
     max-width: auto;
     min-width: 191px;
@@ -206,12 +172,8 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   .rest .rest__link .rest__img {
     -o-object-fit: cover;
@@ -231,54 +193,49 @@
   .rest .rest__link i {
     display: inline-block;
     padding-bottom: 10px;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   .rest .rest__link span {
     padding-left: 10px;
   }
+
   #footer {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
     width: 60%;
     max-width: auto;
-    height: auto;
+    min-width: 221px;
     background-color: #202020;
     color: white;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     font-size: 12px;
     font-family: Roboto;
+    line-height: 3px;
+    padding-bottom: 10px;
+    padding-top: 8px;
+    list-style-position: none;
   }
   #footer .footer__link {
     width: 100%;
     max-width: 100%;
-    height: auto;
     font-family: Roboto;
-    font-size: 10px;
+    font-size: 8px;
   }
   #footer .footer__logo {
     font-family: Shrikhand;
-    font-size: 14px;
+    font-size: 12px;
   }
+
   /* Phone resolution restaurant pages*/
   header {
     margin-left: auto;
     margin-right: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 50%;
     max-width: 100%;
@@ -288,148 +245,132 @@
     width: 50%;
     max-width: 60%;
     min-width: 40%;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 10px;
+    -o-object-fit: absolute;
+       object-fit: absolute;
   }
   header i {
     line-height: 20px;
     font-size: 13px;
   }
+
   .eres {
     margin-left: auto;
     margin-right: auto;
     width: 60%;
-    max-width: 90%;
-    height: auto;
+    max-width: auto;
+    min-width: 221px;
+    height: 40px;
+    padding-bottom: 100px;
   }
   .eres .eres__img {
+    position: absolute;
+    z-index: -1;
     -o-object-fit: cover;
        object-fit: cover;
-    width: 100%;
-    max-width: auto;
-    min-width: 191px;
-    height: 120px;
+    width: 60%;
+    max-width: 100%;
+    min-width: 221px;
+    height: 160px;
     max-height: auto;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
+
   .reMenu {
     margin-left: auto;
     margin-right: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    gap: 20px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    gap: 5px;
     width: 60%;
-    max-width: 90%;
+    max-width: auto;
+    min-width: 221px;
     height: auto;
     font-size: 12px;
     font-family: Roboto;
     background-color: #f2f2f2;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    z-index: 1;
   }
   .reMenu .food {
-    font-size: 15px;
-    width: 100%;
+    font-size: 11px;
+    width: 95%;
   }
   .reMenu .pRI {
-    text-align: end;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95%;
+    justify-content: space-between;
+    line-height: 15px;
   }
   .reMenu header {
     width: 85%;
     max-width: 100%;
-    padding: 5px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .reMenu header .resName {
     font-family: Shrikhand;
     text-align: start;
-    font-size: 18px;
+    font-size: 16px;
   }
   .reMenu header i {
     margin-left: auto;
-    font-size: 18px;
+    font-size: 16px;
   }
   .reMenu .reMenu__eMD {
     margin-left: auto;
     margin-right: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    width: 85%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    width: 90%;
     height: auto;
     gap: 20px;
     padding: 10px;
   }
   .reMenu .reMenu__eMD .reMenu__items {
-    padding-left: 15px;
-    padding-top: 15px;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    padding-left: 10px;
+    padding-top: 5px;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-    max-width: 100%;
-    height: 45px;
+    flex-wrap: nowrap;
+    gap: 5px;
+    flex-grow: 1;
+    flex-direction: column;
+    height: 35px;
     border: 2px solid white;
     background-color: white;
     border-radius: 15px;
     justify-items: space-between;
+    font-size: 9px;
   }
+
   .reMenu__obtn {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    padding: 15px;
+    padding: 10px;
     border: 2px solid inherit;
     border-radius: 30px;
     width: 35%;
     max-width: 100%;
+    height: auto;
     background-color: #ff79da;
     text-align: center;
     margin-top: 4%;
     margin-bottom: 10%;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
