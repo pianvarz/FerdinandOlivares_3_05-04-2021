@@ -22,9 +22,12 @@ $btn_button: linear-gradient(160deg, #d656dc, $primary_color);
 $title_font: Shrikhand;
 $main_font: Roboto;
 
-@mixin btn-color {
+
+@mixin btn-colorstart {
+  background: linear-gradient(80deg, #d656dc, $primary_color);
+}
+@mixin btn-colorend {
   background: linear-gradient(160deg, #d656dc, $primary_color);
-  color: white;
 }
 
 @mixin logo {
@@ -117,7 +120,6 @@ $main_font: Roboto;
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
       @include margin;
-  
       >:nth-child(1), :nth-child(3) {
         line-height: 35px;
         padding: 15px;
@@ -128,7 +130,7 @@ $main_font: Roboto;
     }
 
     #exbtn {
-      @include btn-color;
+      @include btn-colorend;
       text-decoration: none;
       display: inline-block;
       border: 2px solid inherit;
@@ -139,7 +141,10 @@ $main_font: Roboto;
       font-size: 10px;
       letter-spacing: .7px;
       box-shadow: 1px 2px 10px 0px gray;
+      strong {
+        color: white;
       }
+    }
 
   #hIW {
     @include margin;
@@ -239,11 +244,23 @@ $main_font: Roboto;
     }
     .rest__link--mod {
       display: inline-block;
-      padding-bottom: 10px;
       justify-self: center;
-      color: none;
-      &:active {
-        color: $btn_button;
+      background-clip: text;
+      -webkit-background-clip: text;
+      background-color: white;
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: 0px 1px .0001px lightgray;
+      width: auto;
+      &:hover {
+        @include btn-colorstart;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        text-shadow: none;
+      }
       }
     }
   }
@@ -364,7 +381,7 @@ $main_font: Roboto;
         text-align: start;
         font-size: 15px;
       }
-      i {
+      i  {
         margin-left: auto;
         font-size: 15px;
         border: none;
@@ -418,7 +435,7 @@ $main_font: Roboto;
     }
   .reMenu__obtn {
     @include margin;
-    @include btn-color;
+    @include btn-colorend;
     font-family: $main_font;
     display: block;
     padding: 10px;
@@ -434,6 +451,6 @@ $main_font: Roboto;
       color: white;
     }
   }
-}
+
 
 
