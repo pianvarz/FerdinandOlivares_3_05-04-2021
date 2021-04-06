@@ -31,7 +31,7 @@ $wid-marg: $width + $margin-left;
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(200%);
+    transform: translateY(100%);
   }
 
   to {
@@ -198,7 +198,7 @@ $wid-marg: $width + $margin-left;
       padding-top: 5px;
       padding-bottom: 5px;
       box-shadow: 1px 2px 10px 0px lightgray;
-      width: 23%;
+      width: 25%;
       height: 100%;
         &:hover {
           transition: all 500ms;
@@ -458,9 +458,11 @@ $wid-marg: $width + $margin-left;
         width: 90%;
         gap: 40px;
         padding: 10px;
-        a:nth-child(1) { animation-delay: 600ms; }
-        a:nth-child(2) { animation-delay: 400ms; }
-        a:nth-child(3) { animation-delay: 200ms; }
+        a:nth-child(1) { animation-delay: 400ms; }
+        a:nth-child(2) { animation-delay: 800ms; }
+        a:nth-child(3) { animation-delay: 1200ms; }
+        a:nth-child(4) { animation-delay: 1600ms; }
+        a:nth-child(5) { animation-delay: 2000ms; }
         .course {
           display: inline-block;
           position: relative;
@@ -476,8 +478,12 @@ $wid-marg: $width + $margin-left;
             position: absolute;
           }
       }
+      a {
+        animation: fadeIn 1s forwards;
+        opacity: 0;
+      }
         .reMenu__items {
-          animation: fadeIn 1s forwards;
+          animation: fadeIn 0s forwards;
           padding-left: 10px;
           padding-top: 5px;
           display: flex;
@@ -520,10 +526,10 @@ $wid-marg: $width + $margin-left;
             display: block;
             margin-left: auto;
             width: 10%;
-            height: 100%;
-            font-size: 40px;
+            height: 140%;
+            font-size: 45px;
             position: relative;
-            bottom: 26px;
+            bottom: 32px;
             padding-top: 60px;
             text-align: center;
             background-color: $tertiary_color;
@@ -923,9 +929,11 @@ $wid-marg: $width + $margin-left;
         width: 90%;
         gap: 20px;
         padding: 10px;
-        a:nth-child(1) { animation-delay: 600ms; }
-        a:nth-child(2) { animation-delay: 400ms; }
-        a:nth-child(3) { animation-delay: 200ms; }
+        a:nth-child(1) { animation-delay: 400ms; }
+        a:nth-child(2) { animation-delay: 800ms; }
+        a:nth-child(3) { animation-delay: 1200ms; }
+        a:nth-child(4) { animation-delay: 1600ms; }
+        a:nth-child(5) { animation-delay: 2000ms; }
         .course {
           display: inline-block;
           position: relative;
@@ -940,6 +948,10 @@ $wid-marg: $width + $margin-left;
             border-bottom: 2px solid $tertiary_color;
             position: absolute;
           }
+      }
+      a {
+        animation: fadeIn 1s forwards;
+        opacity: 0;
       }
         .reMenu__items {
           animation: fadeIn 1s forwards;
