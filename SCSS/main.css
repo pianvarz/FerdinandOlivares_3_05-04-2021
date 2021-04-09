@@ -1001,6 +1001,9 @@
     overflow: hidden;
     font-size: 8px;
   }
+  .reMenu .reMenu__eMD .reMenu__items span:nth-child(2) {
+    font-size: 7px;
+  }
   .reMenu .reMenu__eMD .reMenu__items .reMenu__content {
     display: flex;
     flex-direction: column;

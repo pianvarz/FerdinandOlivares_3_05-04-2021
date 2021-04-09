@@ -969,11 +969,15 @@ $wid-marg: $width + $margin-left;
           line-height: 15px;
           overflow: hidden;
           font-size: 8px;
+          span:nth-child(2) {
+            font-size: 7px;
+          }
           .reMenu__content {
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
             width: 95%;
+            
             .pRI {
               text-align: right;
               position: relative;
